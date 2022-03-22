@@ -39,6 +39,9 @@ public void addGrade(int grade){
         this.grades.add(grade);
 }
 public double getGradeAverage(){
+        if(this.grades.size() == 0){
+            return 0;
+        }
         double average = 0;
     for (int i = 0; i < this.grades.size(); i++) {
         average += this.grades.get(i);
